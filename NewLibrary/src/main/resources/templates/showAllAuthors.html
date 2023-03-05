@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Об авторе</h1>
+<body>
+
+<div>
+    <span>Имя автора: </span> <span th:text="${authors.name}">Value</span>
+</div>
+
+<div>
+    <span>Фамилия: </span> <span th:text="${authors.lastname}">Value</span>
+</div>
+
+<div>
+    <span>Отчество автора: </span> <span th:text="${authors.surname}">Value</span>
+</div>
+
+<div>
+    <span>Список книг, написанных автором: </span> <span th:text="${authors.surname}">Value</span>
+</div>
+
+</body>
+</html>

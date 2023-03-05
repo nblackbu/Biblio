@@ -23,12 +23,6 @@ import java.util.Map;
 public class BooksController {
 
     @Autowired
-    BooksRepository booksRepository;
-
-    @Autowired
-    AuthorsService authorsService;
-
-    @Autowired
     BooksService booksService;
 
     @GetMapping("books")
@@ -42,4 +36,23 @@ public class BooksController {
         model.addAttribute("books", booksService.findOne(id));
         return "show";
     }
+
+    @GetMapping("admin-books")
+    public String adminBooks (Model model) {
+        model.addAttribute("books", booksService.getAllBooks());
+        return "adminBooks";
+    }
+
+//    @GetMapping("/{id}/edit")
+//    public String edit(Model model, @PathVariable("id") Long id) {
+//        model.addAttribute("book", booksService.findOne(id));
+//        return "editBooks";
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    public String delete(@PathVariable("id") Long id) {
+//        booksService.delete(id);
+//        return "redirect:/profile";
+//    }
+
 }

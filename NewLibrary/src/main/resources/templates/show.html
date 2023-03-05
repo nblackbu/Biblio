@@ -13,9 +13,11 @@
 <div>
     <span>Год издания книги: </span> <span th:text="${books.publishingYear}">Value</span>
 </div>
+
 <div>
-    <span>Автор книги: </span> <span th:text="${books.authorsName + ' ' + books.authorsSurname + ' ' + books.authorsLastname}">Value</span>
+    <span>Автор книги </span> <span th:text="${books.authorsName + ' ' + books.authorsSurname + ' ' + books.authorsLastname}">Value</span>
 </div>
+
 <div>
     <span>Доступное количество книг: </span> <span th:text="${books.quantity}">Value</span>
 </div>
