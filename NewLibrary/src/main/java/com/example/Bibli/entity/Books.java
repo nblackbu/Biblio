@@ -13,7 +13,9 @@ import java.util.List;
 @Data
 
 public class Books {
-
+    public Books(String book_name) {
+        this.book_name = book_name;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,6 +31,17 @@ public class Books {
     @ManyToOne
     @JoinColumn(name="author_id", referencedColumnName = "id")
     private Authors authors;
+
+    @Column(name = "authors_name")
+    private String authorsName;
+
+    @Column(name = "authors_surname")
+    private String authorsSurname;
+
+    @Column(name = "authors_lastname")
+    private String authorsLastname;
+
+    private int quantity;
 
     @ManyToMany
     @JoinTable(

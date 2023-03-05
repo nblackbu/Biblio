@@ -8,15 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="NewLibrary" />
+        <module name="Bibli" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Bibli" target="17" />
       <module name="NewLibrary" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="NewLibrary" options="-parameters" />
+      <module name="Bibli" options="-parameters" />
+      <module name="NewLibrary" options="" />
     </option>
   </component>
 </project>

@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="UTF-8"/>
+  <title>Spring Boot Thymeleaf Application</title>
 </head>
 <body>
-<p>Hello</p>
-<div class="books">
-  <div class="newbooks" th:each="type : ${books}">
-    <p th:text="${type.book_name}">Привет</p>
-  </div>
+<h1>Список книг</h1>
+<div th:each="book : ${books}">
+    <a th:href="@{/profile/{id}(id=${book.getId()})}"
+       th:text="${book.book_name + ',' + ' ' + book.authorsName + ' ' + book.authorsSurname + ' ' + book.authorsLastname}">book</a>
 </div>
 </body>
 </html>
