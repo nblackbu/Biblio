@@ -1,13 +1,11 @@
 package com.example.Bibli.service;
 
 import com.example.Bibli.entity.Books;
-import com.example.Bibli.entity.Users;
 import com.example.Bibli.repo.BooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 

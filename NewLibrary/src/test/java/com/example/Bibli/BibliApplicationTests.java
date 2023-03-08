@@ -7,11 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class BibliApplicationTests {
-	@Autowired
-	BooksRepository booksRepository;
 	@Test
 	void contextLoads() {
-		System.out.println(booksRepository.findAll());
 	}
 
 }
