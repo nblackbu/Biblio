@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value = "/profile")
+@RequestMapping(value = "/books")
 public class BooksController {
 
     @Autowired
     BooksService booksService;
 
-    @GetMapping("books")
-    public String books (Model model) {
+    @GetMapping("all")
+    public String books(Model model) {
         model.addAttribute("books", booksService.getAllBooks());
         return "books";
     }
@@ -28,7 +28,7 @@ public class BooksController {
     }
 
     @GetMapping("admin-books")
-    public String adminBooks (Model model) {
+    public String adminBooks(Model model) {
         model.addAttribute("books", booksService.getAllBooks());
         return "adminBooks";
     }
