@@ -7,13 +7,5 @@
 <h1>Список книг</h1>
 <body>
 <p th:text="${books.book_name + ',' + ' ' + books.authorsName + ' ' + books.authorsSurname + ' ' + books.authorsLastname}">VALUE</p>
-
-<!--<form th:method="GET" th:action="@{/profile/{id}/edit(id=${books.getId()})}">-->
-<!--  <input type="submit" value="Редактировать"/>-->
-<!--</form>-->
-
-<!--<form th:method="DELETE" th:action="@{/profile/{id}(id=${books.getId()})}">-->
-<!--  <input type="submit" value="Удалить"/>-->
-<!--</form>-->
 </body>
 </html>
