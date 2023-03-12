@@ -19,7 +19,7 @@ public class AuthorsService {
         return foundAuthors.orElse(null);
     }
 
-    public List<Authors> findAll() {
+    public List<Authors> getAllAuthors() {
         return this.authorsRepository.findAll();
     }
 
