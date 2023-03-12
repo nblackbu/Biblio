@@ -32,17 +32,4 @@ public class BooksController {
         model.addAttribute("books", booksService.getAllBooks());
         return "adminBooks";
     }
-
-//    @GetMapping("/{id}/edit")
-//    public String edit(Model model, @PathVariable("id") Long id) {
-//        model.addAttribute("book", booksService.findOne(id));
-//        return "editBooks";
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public String delete(@PathVariable("id") Long id) {
-//        booksService.delete(id);
-//        return "redirect:/profile";
-//    }
-
 }
