@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Boot Thymeleaf Application</title>
+</head>
+<body>
+<h1>Жанры</h1>
+<div th:each="genre : ${genres}">
+    <a th:href="@{/genres/{id}(id=${genre.getId()})}"
+       th:text="${genre.name}">genres</a>
+</div>
+</body>
+</html>

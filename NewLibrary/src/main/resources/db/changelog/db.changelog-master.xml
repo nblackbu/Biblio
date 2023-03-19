@@ -9,11 +9,11 @@
         <dbms type="postgresql"/>
     </preConditions>
 
-    <changeSet id="0" author="Elvina">
-        <tagDatabase tag="db_init/"/>
-    </changeSet>
+<!--    <changeSet id="0" author="Elvina">-->
+<!--        <tagDatabase tag="db_init/"/>-->
+<!--    </changeSet>-->
 
-    <include file="create_table/db.changelog-2.0.xml" relativeToChangelogFile="true"/>
+<!--    <include file="create_table/db.changelog-2.0.xml" relativeToChangelogFile="true"/>-->
 
     <changeSet id="1" author="Elvina">
         <tagDatabase tag="v.1.0"/>

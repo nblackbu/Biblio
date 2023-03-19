@@ -7,4 +7,6 @@
 
     <include file="01-changeset-fill_authors_table.xml" relativeToChangelogFile="true"/>
     <include file="01-changeset-fill_books_table.xml" relativeToChangelogFile="true"/>
+    <include file="01-changeset-fill_genres_table.xml" relativeToChangelogFile="true"/>
+    <include file="01-changeset-fill_books_and_genres_table.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
