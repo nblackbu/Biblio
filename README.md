@@ -20,7 +20,7 @@
 
 Использованные технологии: Java 11, Maven, Tomcat, Liquibase, Hibernate, JDBC, Spring Core, Spring MVC, Spring Security, PostgreSQL, Lombok, HTML, Thymeleaf.
 
-Приложение устанавливается на Tomcat, разворачивается в контекстном пути http://localhost:8082/library.
+Приложение устанавливается на Tomcat, разворачивается в контекстном пути http://localhost:8082/
 
 Разворачивание приложения:
 
