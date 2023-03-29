@@ -20,21 +20,28 @@
 
 Использованные технологии: Java 11, Maven, Tomcat, Liquibase, Hibernate, JDBC, Spring Core, Spring MVC, Spring Security, PostgreSQL, Lombok, HTML, Thymeleaf.
 
-Приложение устанавливается на Tomcat, разворачивается в контекстном пути http://localhost:8082/
+Настройка приложения
 
-Разворачивание приложения:
+Необходимо:
 
-1. Скопировать ссылку на репозиторий 
-2. Создать проект при помощи экспорта репозитория
-3. В базе данных PostgreSQL создать тестовую бд для создания и заполнения таблиц при промощи Liquibase
-4. Добавить данные в файл application.properties:
+maven:4.0.0-openjdk-17.0.2
+JDK 17
 
-- spring.datasource.url=jdbc:postgresql://localhost:5432/название_тестовой_таблицы
-- spring.datasource.username=пользователь БД
-- spring.datasource.password=пароль пользователя
+Конфигурация:
 
-6. Запустить приложение
-7. После запуска приложения для просмотра доступны функции просмотра страниц:
+1. Создать БД в сервере PostgreSQL localhost:5432
+   название БД: library
+2. В конфигурационном файле src/main/resources/application.properties указать значения параметров подключения:
+
+spring.datasource.url: jdbc:postgresql://localhost:5432/library
+spring.datasource.username
+spring.datasource.password
+
+Запуск:
+
+1. Запустить приложение 
+
+После запуска приложения для просмотра доступны функции:
 
 - домашняя страница: http://localhost:8082/home
 - просмотр всех авторов, книги которых есть в библиотеке: http://localhost:8082/authors/all
