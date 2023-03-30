@@ -34,7 +34,9 @@ JDK 17
 2. В конфигурационном файле src/main/resources/application.properties указать значения параметров подключения:
 
 spring.datasource.url: jdbc:postgresql://localhost:5432/library
+
 spring.datasource.username
+
 spring.datasource.password
 
 Запуск:
