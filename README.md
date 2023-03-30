@@ -20,7 +20,9 @@
 
 Использованные технологии: Java 11, Maven, Tomcat, Liquibase, Hibernate, JDBC, Spring Core, Spring MVC, Spring Security, PostgreSQL, Lombok, HTML, Thymeleaf.
 
+
 Настройка приложения
+
 
 Необходимо:
 
