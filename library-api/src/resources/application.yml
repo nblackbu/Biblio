@@ -1,0 +1,38 @@
+server:
+  port: 8081
+
+spring:
+  liquibase:
+    change-log: classpath:/db/changelog/changelog.xml
+    default-schema: public
+  jackson:
+    mapper:
+      allow-coercion-of-scalars: false
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: error
+
+http-client:
+  pool:
+    maxTotal: 200
+    defaultMaxPerRoute: 20
+
+cxf:
+  path: /
+  jaxrs:
+    component-scan: true
+  servlet:
+    init:
+      service-list-path: /info
+
+jaxrs:
+  logging-in:
+    enabled: true
+  logging-out:
+    enabled: true
+
+fileStorage:
+  root: /var/filestorage

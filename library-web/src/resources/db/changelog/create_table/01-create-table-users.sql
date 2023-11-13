@@ -1,0 +1,2 @@
+create table users (id bigserial not null, birthday bigint, lastname varchar(255), login varchar(255), name varchar(255), password varchar(255), phone varchar(255), status varchar(255), surname varchar(255), primary key (id));
+GO

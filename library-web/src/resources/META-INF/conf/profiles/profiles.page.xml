@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page xmlns="http://n2oapp.net/framework/config/schema/page-3.0"
+      name="Профиль пользователя">
+    <regions>
+        <tabs>
+            <tab name="Мои бронирования">
+                <table id="settings" query-id="profiles">
+                    <columns>
+                        <column text-field-id="id" label="id"/>
+                        <column text-field-id="name" label="Книга"/>
+<!--                        <column text-field-id="access" label="Дата бронирования"/>-->
+                    </columns>
+                </table>
+            </tab>
+            <tab name="Мои отзывы">
+                <form>
+                    <fields>
+                        <input-text id="name" label="Имя 2"/>
+                    </fields>
+                </form>
+            </tab>
+            <tab name="Хочу прочесть">
+                <form>
+                    <fields>
+                        <input-text id="name" label="Имя 3"/>
+                    </fields>
+                </form>
+            </tab>
+            <tab name="Я прочитал(а)">
+                <form>
+                    <fields>
+                        <input-text id="name" label="Имя 3"/>
+                    </fields>
+                </form>
+            </tab>
+        </tabs>
+    </regions>
+</page>

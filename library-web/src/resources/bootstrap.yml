@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: library
+  cloud:
+    consul:
+      config:
+        enabled: false
+        prefix: newLibrary
+        failFast: false

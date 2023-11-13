@@ -1,0 +1,23 @@
+#server:
+#  port: 8084
+#
+#spring:
+#  http:
+#    encoding:
+#      forceResponse: true
+#      force: true
+#
+#n2o:
+#  application:
+#    id: mock
+#  engine:
+#    pageStartsWith0: true
+#  access:
+#    schema:
+#      id: library
+#    deny_objects: false
+#    deny_pages: false
+#    deny_urls: false
+#
+#library:
+#  url: http://localhost:8081

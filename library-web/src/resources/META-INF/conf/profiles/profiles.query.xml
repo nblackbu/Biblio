@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<query xmlns="http://n2oapp.net/framework/config/schema/query-4.0">
+    <list>
+        <sql>SELECT authors_name FROM books</sql>
+<!--        <rest method="GET">http://localhost:8087/authors/all</rest>-->
+    </list>
+    <fields>
+        <field id="id">
+            <select/>
+        </field>
+        <field id="name">
+            <select/>
+        </field>
+    </fields>
+</query>
