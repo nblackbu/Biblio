@@ -1,1 +1,0 @@
-create table authors (id bigserial not null, lastname varchar(255), name varchar(255), surname varchar(255), primary key (id));

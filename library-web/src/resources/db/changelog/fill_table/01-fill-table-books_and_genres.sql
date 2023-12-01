@@ -1,1 +1,0 @@
-insert into books_and_genres values (1, 1);
