@@ -44,7 +44,7 @@ spring.datasource.password
 
 Запуск:
 
-1. Запустить приложение 
+1. Запустить api-модуль BibliApplication при помощи IDEA: Run Configuration
 
 После запуска приложения для просмотра доступны функции:
 
