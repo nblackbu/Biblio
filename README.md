@@ -36,12 +36,11 @@ JDK 17
    название БД: library
 2. В конфигурационном файле src/main/resources/application.properties указать значения параметров подключения:
 
+```
 spring.datasource.url: jdbc:postgresql://localhost:5432/library
-
 spring.datasource.username
-
 spring.datasource.password
-
+```
 Запуск:
 
 1. Запустить api-модуль BibliApplication при помощи IDEA: Run Configuration
