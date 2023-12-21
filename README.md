@@ -1,4 +1,4 @@
-Самостоятельный проект "Библиотека"
+# Самостоятельный проект "Библиотека"
 
 Проект "Библиотека" предназначена для работников и пользователей библиотеки.
 
@@ -21,7 +21,7 @@
 Использованные технологии: Java 11, Maven, Tomcat, Liquibase, Hibernate, JDBC, Spring Core, Spring MVC, Spring Security, PostgreSQL, Lombok, HTML, Thymeleaf.
 
 
-Настройка приложения
+## Настройка приложения
 
 
 Необходимо:
@@ -30,7 +30,7 @@ maven:4.0.0-openjdk-17.0.2
 
 JDK 17
 
-Конфигурация:
+## Конфигурация:
 
 1. Создать БД в сервере PostgreSQL localhost:5432
    название БД: library
@@ -41,7 +41,7 @@ spring.datasource.url: jdbc:postgresql://localhost:5432/library
 spring.datasource.username
 spring.datasource.password
 ```
-Запуск:
+### Запуск:
 
 1. Запустить api-модуль BibliApplication при помощи IDEA: Run Configuration
 
