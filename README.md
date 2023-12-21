@@ -40,6 +40,7 @@
 spring.datasource.url: jdbc:postgresql://localhost:5432/library
 spring.datasource.username
 spring.datasource.password
+server.port:
 ```
 ## Запуск:
 
@@ -47,9 +48,11 @@ spring.datasource.password
 
 ### После запуска приложения для просмотра доступны функции:
 
-- домашняя страница: http://localhost:8082/home
+- домашняя страница: http://localhost:{port}/home
 - просмотр всех авторов, книги которых есть в библиотеке: http://localhost:8082/authors/all
 - просмотр автора по id (на данный момент в бд добавлен 1 автор) : http://localhost:8082/authors/id
 - просмотр всех книг, которые есть в библиотеке на данный момент: http://localhost:8082/books/all
 - просмотр книги по id (на данный момент в бд добавлена 1 книга) : http://localhost:8082/books/id
-- просмотр всех жанров книг, доступных в бибилотеке http://localhost:8082/genres/all
+- просмотр всех жанров книг, доступных в бибилотеке http://localhost:8082/genres/all ,
+
+где {port} = server.port в application.properties
